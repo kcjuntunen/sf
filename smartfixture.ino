@@ -50,7 +50,9 @@ long unsigned int lowIn;
 long unsigned int pause = 5000;
 long unsigned motion_start = 0;
 long unsigned motion_time = 0;
+#ifdef __BME280_H__
 BME280 BME;
+#endif
 #ifdef ADAFRUIT_PN532_H
 Adafruit_PN532 nfc(PN532_SCK, PN532_MISO, PN532_MOSI, PN532_SS);
 #endif
